@@ -5,6 +5,10 @@ VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Editor_Window", "Editor_Window\Editor_Window.vcxproj", "{2238EEDA-CE9E-4531-8799-CE60A306E1B5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OGEngine_Window", "OGEngine_Window\OGEngine_Window.vcxproj", "{4105C8E4-ED00-4A37-83DD-C8186AFBEB7E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SOURCE", "SOURCE\SOURCE.vcxitems", "{A46261F5-9C87-4F9F-A757-80B374040CDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,11 +25,23 @@ Global
 		{2238EEDA-CE9E-4531-8799-CE60A306E1B5}.Release|x64.Build.0 = Release|x64
 		{2238EEDA-CE9E-4531-8799-CE60A306E1B5}.Release|x86.ActiveCfg = Release|Win32
 		{2238EEDA-CE9E-4531-8799-CE60A306E1B5}.Release|x86.Build.0 = Release|Win32
+		{4105C8E4-ED00-4A37-83DD-C8186AFBEB7E}.Debug|x64.ActiveCfg = Debug|x64
+		{4105C8E4-ED00-4A37-83DD-C8186AFBEB7E}.Debug|x64.Build.0 = Debug|x64
+		{4105C8E4-ED00-4A37-83DD-C8186AFBEB7E}.Debug|x86.ActiveCfg = Debug|Win32
+		{4105C8E4-ED00-4A37-83DD-C8186AFBEB7E}.Debug|x86.Build.0 = Debug|Win32
+		{4105C8E4-ED00-4A37-83DD-C8186AFBEB7E}.Release|x64.ActiveCfg = Release|x64
+		{4105C8E4-ED00-4A37-83DD-C8186AFBEB7E}.Release|x64.Build.0 = Release|x64
+		{4105C8E4-ED00-4A37-83DD-C8186AFBEB7E}.Release|x86.ActiveCfg = Release|Win32
+		{4105C8E4-ED00-4A37-83DD-C8186AFBEB7E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E13A243-EABC-41EF-8E92-30EE131BEB95}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SOURCE\SOURCE.vcxitems*{4105c8e4-ed00-4a37-83dd-c8186afbeb7e}*SharedItemsImports = 4
+		SOURCE\SOURCE.vcxitems*{a46261f5-9c87-4f9f-a757-80b374040cdf}*SharedItemsImports = 9
 	EndGlobalSection
 EndGlobal
