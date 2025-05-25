@@ -4,8 +4,6 @@
 #include <string>
 #include <map>
 
-
-
 //PlaySound, waveOut, timeGetTime 등)
 //타이머 관련 고해상도 API
 #pragma comment(lib,"winmm.lib")
@@ -25,3 +23,27 @@
 #include "Enums.h"
 
 using namespace OG_Utils;
+
+
+
+
+//Macro
+
+
+//CRASH
+#define CRASH(cause)						\
+{											\
+	int* crash = nullptr;				\
+	__analysis_assume(crash != nullptr);	\
+	*crash = 0xDEADBEEF;					\
+}
+
+#define ASSERT_CRASH(expr)			\
+{									\
+	if (!(expr))					\
+	{								\
+		CRASH("ASSERT_CRASH");		\
+		__analysis_assume(expr);	\
+	}								\
+}
+

@@ -20,7 +20,7 @@ public:
 	void LateUpdate()  override;
 	void Render(HDC hdc)  override;
 
-	void SetPos(OG_Utils::Vector2 pos) { _position.x = pos.x; _position.y = pos.y; }
+	void SetPosition(OG_Utils::Vector2 pos) { _position.x = pos.x; _position.y = pos.y; }
 	OG_Utils::Vector2 GetPosition() { return _position; }
 
 private:

@@ -10,33 +10,22 @@ public:
 		T* scene = new T();
 		scene->SetName(name);
 
+		_ActiveScene = scene;
+		
 		_scenes.insert(std::make_pair(name,scene));
 		scene->Init();
 
 		return scene;
 	}
 
-	static Scene* LoadScene(const std::wstring& name)
-	{
-		if(_ActiveScene)
-			_ActiveScene->OnExit();
-
-		auto It = _scenes.find(name);
-
-		if (It == _scenes.end())
-			return nullptr;
-
-		_ActiveScene = It->second;
-		_ActiveScene->OnEnter();
-
-		return It->second;
-		
-	}
+	static Scene* LoadScene(const std::wstring& name);
 
 	static void Init();
 	static void Update();
 	static void LateUpdate();
 	static void Render(HDC hdc);
+
+	static Scene* GetActiveScene() { return _ActiveScene; }
 
 private:
 	static std::map<const std::wstring, Scene*>  _scenes;

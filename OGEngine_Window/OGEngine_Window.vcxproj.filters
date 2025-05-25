@@ -16,6 +16,9 @@
     <ClInclude Include="PlayScene.h">
       <Filter>Scenes</Filter>
     </ClInclude>
+    <ClInclude Include="LoadResources.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LoadScenes.cpp">

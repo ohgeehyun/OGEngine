@@ -9,6 +9,8 @@ public:
 	GameObject();
 	~GameObject();
 
+	void InitTransform();
+
 	virtual void Init();
 	virtual void Update();
 	virtual void LateUpdate();
@@ -31,7 +33,7 @@ public:
 		T* component = nullptr;
 		for (Component* comp : _components)
 		{
-			component = static_cast<T*>(comp);
+			component = dynamic_cast<T*>(comp);
 			if (component)
 				break;
 		}
@@ -40,7 +42,6 @@ public:
 	}
 
 private:
-	//게임 오브젝트의 좌표
 	std::vector<Component*> _components;
 };
 

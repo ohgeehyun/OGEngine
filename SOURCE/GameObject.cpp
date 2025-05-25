@@ -3,9 +3,11 @@
 #include "CustomInput.h"
 #include "CustomTime.h"
 #include "Component.h"
+#include "Transform.h"
 
 GameObject::GameObject()
 {
+    InitTransform();
 }
 
 GameObject::~GameObject()
@@ -17,6 +19,12 @@ GameObject::~GameObject()
         comp = nullptr;
     }
 }
+
+void GameObject::InitTransform()
+{
+    AddComponent<Transform>();
+}
+
 
 void GameObject::Init()
 {

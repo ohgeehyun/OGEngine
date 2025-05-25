@@ -14,6 +14,8 @@ public:
 	void LateUpdate();
 	void Render();
 
+	HDC GetHdc() { return _mHdc; }
+
 private:
 	void clearRenderTarget();
 	void copyRenderTarget(HDC source,HDC dset);

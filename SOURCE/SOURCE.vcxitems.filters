@@ -1,15 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)Entity.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)OGApplication.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)Scene.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)SceneManager.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Vector2.cpp">
       <Filter>Utils</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)Resourses.cpp">
+    <ClCompile Include="$(MSBuildThisFileDirectory)Resources.cpp">
       <Filter>Resource</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Resource.cpp">
@@ -33,18 +30,30 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Layer.cpp">
       <Filter>Layer</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Entity.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture.cpp">
+      <Filter>Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Script.cpp">
+      <Filter>Compoenent</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)Entity.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)OGApplication.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)Scene.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)SceneManager.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Vector2.h">
       <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)Resourses.h">
+    <ClInclude Include="$(MSBuildThisFileDirectory)Resources.h">
       <Filter>Resource</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Resource.h">
@@ -71,6 +80,24 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Enums.h">
       <Filter>Layer</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Object.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Entity.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture.h">
+      <Filter>Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Script.h">
+      <Filter>Compoenent</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">
@@ -84,6 +111,12 @@
     </Filter>
     <Filter Include="Layer">
       <UniqueIdentifier>{00879140-d9f4-4d9b-bcb3-4c519a54ce3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Texture">
+      <UniqueIdentifier>{3326a687-b883-4c6a-bac9-a41bc491f88c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{57bb42a2-3023-41fb-886e-266acb94cc0b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

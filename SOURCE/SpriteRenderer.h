@@ -1,6 +1,7 @@
 #pragma once
 #include "Entity.h"
 #include "Component.h"
+#include "Texture.h"
 
 class SpriteRenderer : public Component
 {
@@ -13,11 +14,10 @@ public:
 	void LateUpdate()  override;
 	void Render(HDC hdc)  override;
 
-	void ImageLoad(const std::wstring& path);
-
+	void SetTextrue(graphcis::Texture* texture) { _textrue = texture; }
+	void SetSize(Vector2 size) { _size = size; };
 private:
-	Gdiplus::Image* _image;
-	UINT _width;
-	UINT _height;
+	OG_Utils::graphcis::Texture* _textrue;
+	OG_Utils::Vector2 _size;
 };
 

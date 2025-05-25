@@ -3,6 +3,22 @@
 std::map<const std::wstring, Scene*> SceneManager::_scenes;
 Scene* SceneManager::_ActiveScene = nullptr;
 
+Scene* SceneManager::LoadScene(const std::wstring& name)
+{
+	if (_ActiveScene)
+		_ActiveScene->OnExit();
+	
+	auto It = _scenes.find(name);
+	
+	if (It == _scenes.end())
+		return nullptr;
+	
+	_ActiveScene = It->second;
+	_ActiveScene->OnEnter();
+	
+	return It->second;
+}
+
 void SceneManager::Init()
 {
 }

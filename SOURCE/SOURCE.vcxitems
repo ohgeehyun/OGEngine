@@ -21,13 +21,16 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Enums.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Layer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Object.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)OGApplication.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Resource.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)Resourses.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Resources.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Scene.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)SceneManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Script.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)SpriteRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Texture.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Transform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Vector2.h" />
   </ItemGroup>
@@ -50,10 +53,12 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Resource.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)Resourses.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Resources.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Scene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SceneManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Script.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)SpriteRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Texture.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Transform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Vector2.cpp" />
   </ItemGroup>

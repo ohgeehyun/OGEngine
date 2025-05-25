@@ -7,6 +7,7 @@
 #include "Common.h"
 #include "../SOURCE/OGApplication.h"
 #include "../OGEngine_Window/LoadScenes.h"
+#include "../OGEngine_Window/LoadResources.h"
 
 #define MAX_LOADSTRING 100
 
@@ -165,6 +166,9 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    UpdateWindow(hWnd);
 
    Gdiplus::GdiplusStartup(&gpToken, &gpsi, NULL);
+
+   //loadResource
+   LoadResources();
    //load Scenes
    LoadScenes();
    

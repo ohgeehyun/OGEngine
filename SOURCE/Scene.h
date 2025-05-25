@@ -17,7 +17,8 @@ public:
 	virtual void OnEnter();
 	virtual void OnExit();
 
-	void AddGameObject( GameObject* gameobj, eLayerType type);
+	void AddGameObject( GameObject* gameobj, OG_Utils::eLayerType type);
+	Layer* GetLayer(OG_Utils::eLayerType type) { return _layers[(UINT)type];}
 
 private:
 	std::vector<Layer*> _layers;

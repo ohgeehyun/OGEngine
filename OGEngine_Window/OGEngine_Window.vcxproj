@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LoadResources.h" />
     <ClInclude Include="LoadScenes.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayScene.h" />

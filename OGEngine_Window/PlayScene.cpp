@@ -5,6 +5,9 @@
 #include "SpriteRenderer.h"
 #include "CustomInput.h"
 #include "SceneManager.h"
+#include "object.h"
+#include "Texture.h"
+#include "Resources.h"
 
 PlayScene::PlayScene() : background(nullptr)
 {
@@ -18,18 +21,15 @@ PlayScene::~PlayScene()
 
 void PlayScene::Init()
 {
-	background = new Player();
 
-	Transform* tr = background->AddComponent<Transform>();
-	tr->SetPos(Vector2(0, 0));
-	tr->SetName(L"TR");
-
+	background = OG_Utils::object::Instantiate<Player>(OG_Utils::eLayerType::BackGround/*,Vector2(100.0f,100.0f)*/);
 	SpriteRenderer* sr = background->AddComponent<SpriteRenderer>();
-	sr->SetName(L"SR");
-	sr->ImageLoad(L"G:\\unity\\OGEngine\\Resourses\\CloudOcean.png");
 
+	OG_Utils::graphcis::Texture* bg = Resources::Find<OG_Utils::graphcis::Texture>(L"BackGround");
+	sr->SetTextrue(bg);
 
-	AddGameObject(background,eLayerType::BackGround);
+	//오브젝트 생성 후 레이어와 오브젝트들의 초기화 호출
+	Scene::Init();
 }
 
 void PlayScene::Update()
@@ -58,6 +58,6 @@ void PlayScene::OnEnter()
 
 void PlayScene::OnExit()
 {
-	Transform* tr = background->GetComponent<Transform>();
-	tr->SetPos(Vector2(0, 0));
+	//Transform* tr = background->GetComponent<Transform>();
+	//tr->SetPosition(Vector2(0, 0));
 }
