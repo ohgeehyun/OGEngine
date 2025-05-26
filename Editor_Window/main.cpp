@@ -150,8 +150,8 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
         // 인스턴스 핸들
         // 추가 파라미터 (보통 nullptr)
    */
-   const UINT width = 1600;
-   const UINT height = 900;
+   const UINT width = 672;
+   const UINT height = 846;
 
    HWND hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
       CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, hInstance, nullptr); // 성공시 Handle 반환

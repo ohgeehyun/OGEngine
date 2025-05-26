@@ -1,10 +1,12 @@
 #pragma once
 #include "Component.h"
 
-class Script : Component
+class Script : public Component
 {
-
 public:
+	Script();
+	~Script();
+
 	void Init() override;
 	void Update() override;
 	void LateUpdate() override;

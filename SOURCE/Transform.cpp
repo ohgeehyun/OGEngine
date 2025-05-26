@@ -1,6 +1,6 @@
 #include "Transform.h"
 
-Transform::Transform()
+Transform::Transform() : Component(OG_Utils::eComponentType::Transform)
 {
 
 }

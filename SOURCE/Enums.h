@@ -2,6 +2,15 @@
 
 namespace OG_Utils
 {
+	enum class eComponentType
+	{
+		Transform,
+		SpriteRenderer,
+		Script,
+		Camera,
+		End
+	};
+
 	enum class eLayerType
 	{
 		None,

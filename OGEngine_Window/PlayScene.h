@@ -17,6 +17,6 @@ public:
 	void OnEnter() override;
 	void OnExit() override;
 private:
-	Player* background;
+	Player* _player;
 };
 

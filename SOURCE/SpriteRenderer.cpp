@@ -2,8 +2,10 @@
 #include "SpriteRenderer.h"
 #include "GameObject.h"
 #include "Transform.h"
+#include "Renderer.h"
+#include "Camera.h"
 
-SpriteRenderer::SpriteRenderer() :Component(), _textrue(nullptr), _size(OG_Utils::Vector2::One)
+SpriteRenderer::SpriteRenderer() :Component(OG_Utils::eComponentType::SpriteRenderer), _textrue(nullptr), _size(OG_Utils::Vector2::One)
 {
 }
 
@@ -29,6 +31,8 @@ void SpriteRenderer::Render(HDC hdc)
 
 	Transform* tr = GetOwner()->GetComponent<Transform>();
 	Vector2 pos = tr->GetPosition();
+	Vector2 cameraPos = renderer::mainCamera->CacluatePosition(pos);
+	pos = renderer::mainCamera->CacluatePosition(pos);
 
 	if (_textrue->GetTextureType() == OG_Utils::graphcis::Texture::eTextureType::Bmp)
 	{

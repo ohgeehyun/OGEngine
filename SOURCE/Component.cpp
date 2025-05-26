@@ -1,7 +1,7 @@
 #include "Component.h"
 
 
-Component::Component()
+Component::Component(OG_Utils::eComponentType type) : _type(type)
 {
 }
 

@@ -22,7 +22,7 @@ public:
 		T* comp = new T();
 		comp->SetOwner(this);
 		comp->Init();
-		_components.push_back(comp);
+		_components[(UINT)comp->GetType()] = comp;
 
 		return comp;
 	}

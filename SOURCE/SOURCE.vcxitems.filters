@@ -18,12 +18,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)CustomInput.cpp">
       <Filter>Utils</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)Transform.cpp">
-      <Filter>Compoenent</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)SpriteRenderer.cpp">
-      <Filter>Compoenent</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Component.cpp">
       <Filter>Compoenent</Filter>
     </ClCompile>
@@ -43,7 +37,19 @@
       <Filter>Scene</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Script.cpp">
-      <Filter>Compoenent</Filter>
+      <Filter>Compoenent\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SpriteRenderer.cpp">
+      <Filter>Compoenent\SpriteRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Transform.cpp">
+      <Filter>Compoenent\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Camera.cpp">
+      <Filter>Compoenent\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Renderer.cpp">
+      <Filter>Renderer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -65,19 +71,10 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)CustomInput.h">
       <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)SpriteRenderer.h">
-      <Filter>Compoenent</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)Transform.h">
-      <Filter>Compoenent</Filter>
-    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Component.h">
       <Filter>Compoenent</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Layer.h">
-      <Filter>Layer</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)Enums.h">
       <Filter>Layer</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Object.h">
@@ -95,8 +92,23 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Scene.h">
       <Filter>Scene</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Enums.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)Script.h">
-      <Filter>Compoenent</Filter>
+      <Filter>Compoenent\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SpriteRenderer.h">
+      <Filter>Compoenent\SpriteRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Transform.h">
+      <Filter>Compoenent\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Camera.h">
+      <Filter>Compoenent\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Renderer.h">
+      <Filter>Renderer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -117,6 +129,21 @@
     </Filter>
     <Filter Include="Scene">
       <UniqueIdentifier>{57bb42a2-3023-41fb-886e-266acb94cc0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compoenent\Script">
+      <UniqueIdentifier>{7c487797-2f82-4033-b596-18a0a770e08f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compoenent\SpriteRenderer">
+      <UniqueIdentifier>{4d70a6d3-f15a-4ebb-86ff-c99d197df051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compoenent\Transform">
+      <UniqueIdentifier>{1b6f6e20-5e09-4119-aacc-4d18569bc43a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compoenent\Camera">
+      <UniqueIdentifier>{e4eefd6f-6bd6-402e-bc1e-91b54b11e5fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{f9052914-8f91-4060-8101-f84f986cc78f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,5 +1,13 @@
 #include "Script.h"
 
+Script::Script() : Component(OG_Utils::eComponentType::Script)
+{
+}
+
+Script::~Script()
+{
+}
+
 void Script::Init()
 {
 }
