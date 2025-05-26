@@ -1,6 +1,9 @@
 #include "Transform.h"
 
-Transform::Transform() : Component(OG_Utils::eComponentType::Transform)
+Transform::Transform() : 
+	Component(OG_Utils::eComponentType::Transform),
+	_Scale(Vector2::One),
+	_Rotation(0.0f)
 {
 
 }

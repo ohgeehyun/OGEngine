@@ -6,6 +6,7 @@ namespace OG_Utils
 	{
 		Transform,
 		SpriteRenderer,
+		Animator,
 		Script,
 		Camera,
 		End
@@ -16,6 +17,7 @@ namespace OG_Utils
 		None,
 		BackGround,
 		Player,
+		Particle,
 		Max = 16
 	};
 
@@ -23,6 +25,7 @@ namespace OG_Utils
 	{
 		Texture,
 		AudioClip,
+		Animation,
 		Prefab,
 		End,
 	};

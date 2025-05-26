@@ -4,6 +4,14 @@
 class PlayerScript : public Script
 {
 public:
+	enum class eState
+	{
+		SitDown,
+		Walk,
+		Sleep,
+		Attack
+	};
+
 	PlayerScript();
 	~PlayerScript();
 
@@ -11,7 +19,13 @@ public:
 	void Update() override;
 	void LateUpdate() override;
 	void Render(HDC hdc) override;
-private:
 
+private:
+	void sitDown();
+	void move();
+
+private:
+	eState _state;
+	class Animator* _animator;
 };
 
