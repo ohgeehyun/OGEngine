@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)OGApplication.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Vector2.cpp">
       <Filter>Utils</Filter>
@@ -57,9 +56,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Animation.cpp">
       <Filter>Resource</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)OGApplication.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Vector2.h">
@@ -122,6 +121,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Animation.h">
       <Filter>Resource</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Utils">

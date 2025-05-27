@@ -19,18 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LoadResources.h" />
-    <ClInclude Include="LoadScenes.h" />
+    <ClInclude Include="CatScript.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerScript.h" />
     <ClInclude Include="PlayScene.h" />
     <ClInclude Include="TitleScene.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CatScript.cpp" />
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerScript.cpp" />
     <ClCompile Include="PlayScene.cpp" />
-    <ClCompile Include="LoadScenes.cpp" />
     <ClCompile Include="TitleScene.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

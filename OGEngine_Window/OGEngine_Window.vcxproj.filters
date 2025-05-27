@@ -1,43 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Scenes">
-      <UniqueIdentifier>{19cc20fa-41bf-4e46-bdc1-93aa5d803313}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Script">
       <UniqueIdentifier>{9af06c5b-e767-4e54-8314-daebe719dd0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{d2383409-3d95-42b5-9859-62d86ce6e461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{b7654c0d-61c3-49c5-aef9-f5be80af8923}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LoadScenes.h">
-      <Filter>Scenes</Filter>
+    <ClInclude Include="PlayerScript.h">
+      <Filter>Script</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="TitleScene.h">
-      <Filter>Scenes</Filter>
+    <ClInclude Include="Player.h">
+      <Filter>Object</Filter>
     </ClInclude>
     <ClInclude Include="PlayScene.h">
-      <Filter>Scenes</Filter>
+      <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="LoadResources.h">
-      <Filter>Scenes</Filter>
+    <ClInclude Include="TitleScene.h">
+      <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerScript.h">
+    <ClInclude Include="Enemy.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CatScript.h">
       <Filter>Script</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LoadScenes.cpp">
-      <Filter>Scenes</Filter>
+    <ClCompile Include="PlayerScript.cpp">
+      <Filter>Script</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="TitleScene.cpp">
-      <Filter>Scenes</Filter>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Object</Filter>
     </ClCompile>
     <ClCompile Include="PlayScene.cpp">
-      <Filter>Scenes</Filter>
+      <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerScript.cpp">
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CatScript.cpp">
       <Filter>Script</Filter>
     </ClCompile>
   </ItemGroup>

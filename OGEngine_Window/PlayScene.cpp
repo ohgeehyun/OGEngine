@@ -12,6 +12,7 @@
 #include "Camera.h"
 #include "Renderer.h"
 #include "Animator.h"
+#include "Enemy.h"
 
 PlayScene::PlayScene() : _player(nullptr)
 {
@@ -62,6 +63,22 @@ void PlayScene::Init()
 	//bgsr->SetSize(Vector2(3.0f, 3.0f));
 	OG_Utils::graphcis::Texture* bgTextrue = Resources::Find<OG_Utils::graphcis::Texture>(L"Bubble");
 	bgsr->SetTextrue(bgTextrue);
+
+	//cat
+
+	Enemy* enemy = OG_Utils::object::Instantiate<Enemy>(OG_Utils::eLayerType::Particle/*,Vector2(100.0f,100.0f)*/);
+	enemy->AddComponent<PlayerScript>();
+
+	OG_Utils::graphcis::Texture* packmanTexure = Resources::Find<OG_Utils::graphcis::Texture>(L"Cat");
+	Animator* animator = _player->AddComponent<Animator>();
+	animator->CreateAnimation(L"DownWalk", packmanTexure, Vector2(0.0f, 0.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+	animator->CreateAnimation(L"RightWalk", packmanTexure, Vector2(0.0f, 32.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+	animator->CreateAnimation(L"UpWalk", packmanTexure, Vector2(0.0f, 64.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+	animator->CreateAnimation(L"LeftWalk", packmanTexure, Vector2(0.0f, 96.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+	animator->CreateAnimation(L"SitDown", packmanTexure, Vector2(0.0f, 128.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+	animator->CreateAnimation(L"Grooming", packmanTexure, Vector2(0.0f, 160.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+
+	animator->PlayAnimation(L"SitDown", false);
 
 	//오브젝트 생성 후 레이어와 오브젝트들의 초기화 호출
 	Scene::Init();
